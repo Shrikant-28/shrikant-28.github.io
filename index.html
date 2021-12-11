@@ -1,79 +1,910 @@
-
-<!doctype html>
-<html lang="en" class="h-100">
+<html>
   <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
-    <title>Cover Template · Bootstrap v5.1</title>
+    <title>Shrikant</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:100,200,400,700' rel='stylesheet' type='text/css'>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script src="https://raw.githubusercontent.com/mattboldt/typed.js/master/dist/typed.min.js"></script>
+    
+      <style>
+        html,
+body {
+  font-family: "Raleway", sans-serif;
+  font-smoothing: antialiased;
+  height: 100%;
+}
 
-    <!-- Bootstrap core CSS -->
-<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
 
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#7952b3">
+#sidebar {
+  animation-duration: 0.2s;
+  background-color: rgba(84, 106, 123, 0.95);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  z-index: 1;
+}
+#sidebar ul {
+  display: table;
+  position: relative;
+  top: 6em;
+  width: 100%;
+}
+#sidebar ul li {
+  border-style: none;
+  display: table;
+  font-size: 20px;
+  font-weight: 400;
+  height: 60px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+#sidebar ul li:hover {
+  background-color: #222426 !important;
+  color: #546a7b !important;
+}
+#sidebar ul li a {
+  background-color: rgba(84, 106, 123, 0);
+  color: inherit;
+  display: table-cell;
+  height: 100%;
+  padding-left: 1.2em;
+  text-decoration: none;
+  transform: translate(-5px, 0);
+  transition: 0.6s ease-out;
+  vertical-align: middle;
+  width: 100%;
+}
+#sidebar ul li a:hover {
+  color: #00f6ed !important;
+  transform: translate(5px, 0);
+  transition: 0.2s linear;
+}
 
+#projects {
+  background-color: #edf9f9;
+  padding: 80px 0;
+}
+#projects h2 {
+  display: block;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin: 0 !important;
+  margin-after: 0.83em;
+  margin-before: 0.83em;
+  padding-bottom: 50px;
+  position: relative;
+  text-align: center;
+}
+#projects h2after {
+  bottom: 30px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100px;
+}
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+#about {
+  background-color: #fdfdff;
+  margin: 0;
+  min-height: 70%;
+  padding: 80px 0;
+}
+#about h2 {
+  display: block;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin: 0 !important;
+  margin-after: 0.83em;
+  margin-before: 0.83em;
+  padding-bottom: 50px;
+  text-align: center;
+}
+#about h2after {
+  bottom: 30px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100px;
+}
+#about div {
+  font-family: "Droid Serif", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  text-indent: 25px;
+}
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+#contact {
+  background-color: #222426;
+  font-size: 25px;
+}
+#contact strong {
+  color: #00f6ed;
+}
+
+@media (min-width: 1024px) {
+  #menu-button {
+    font-size: 14px;
+    left: 2.5em;
+    position: fixed;
+    top: 2.5em;
+    z-index: 2;
+  }
+
+  #home h1 p {
+    font-size: 42px;
+    font-weight: 400;
+  }
+  #home h1 strong {
+    font-size: 46px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #menu-button {
+    font-size: 12px;
+    left: 2.5em;
+    position: fixed;
+    top: 2.5em;
+    z-index: 2;
+  }
+
+  #home h1 p {
+    font-size: 38px;
+    font-weight: 400;
+  }
+  #home h1 strong {
+    font-size: 42px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #menu-button {
+    font-size: 10px;
+    left: 2.5em;
+    position: fixed;
+    top: 2.5em;
+    z-index: 2;
+  }
+
+  #home h1 p {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  #home h1 strong {
+    font-size: 34px;
+  }
+
+  #contact button {
+    font-size: 0.7em;
+  }
+  #contact p {
+    font-size: 0.7em;
+  }
+}
+.dark-gray-background {
+  background-color: #222426;
+}
+
+.dark-gray-font {
+  color: #222426 !important;
+}
+
+.light-white-font {
+  color: #fdfdff;
+}
+
+.light-blue-background {
+  background-color: #edf9f9;
+}
+
+.middle-blue-font {
+  color: #00f6ed !important;
+}
+
+.middle-blue-background {
+  background-color: #00f6ed;
+}
+
+.dark-blue-font {
+  color: #546a7b;
+}
+
+.center {
+  left: 50%;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-fluid {
+  min-height: 100%;
+  padding: 0;
+}
+
+.fill {
+  height: 100%;
+  min-height: 100%;
+}
+
+.footer {
+  bottom: 0;
+  min-height: 30%;
+  position: relative;
+}
+.footer .container {
+  left: 50%;
+  padding-top: 1.3em;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.fixed-width {
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.email {
+  font-size: 0.9em;
+  height: 2.4em;
+  width: 8.7em;
+}
+
+.typed-cursor {
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  opacity: 1;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
     </style>
-
     
-    <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/docs/5.1/examples/cover/cover.css" rel="stylesheet">
+    <script type="text/javascript">
+      
+! function($) {
+
+    "use strict";
+
+    var Typed = function(el, options) {
+
+        // chosen element to manipulate text
+        this.el = $(el);
+
+        // options
+        this.options = $.extend({}, $.fn.typed.defaults, options);
+
+        // attribute to type into
+        this.isInput = this.el.is('input');
+        this.attr = this.options.attr;
+
+        // show cursor
+        this.showCursor = this.isInput ? false : this.options.showCursor;
+
+        // text content of element
+        this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text()
+
+        // html or plain text
+        this.contentType = this.options.contentType;
+
+        // typing speed
+        this.typeSpeed = this.options.typeSpeed;
+
+        // add a delay before typing starts
+        this.startDelay = this.options.startDelay;
+
+        // backspacing speed
+        this.backSpeed = this.options.backSpeed;
+
+        // amount of time to wait before backspacing
+        this.backDelay = this.options.backDelay;
+
+        // div containing strings
+        this.stringsElement = this.options.stringsElement;
+
+        // input strings of text
+        this.strings = this.options.strings;
+
+        // character number position of current string
+        this.strPos = 0;
+
+        // current array position
+        this.arrayPos = 0;
+
+        // number to stop backspacing on.
+        // default 0, can change depending on how many chars
+        // you want to remove at the time
+        this.stopNum = 0;
+
+        // Looping logic
+        this.loop = this.options.loop;
+        this.loopCount = this.options.loopCount;
+        this.curLoop = 0;
+
+        // for stopping
+        this.stop = false;
+
+        // custom cursor
+        this.cursorChar = this.options.cursorChar;
+
+        // shuffle the strings
+        this.shuffle = this.options.shuffle;
+        // the order of strings
+        this.sequence = [];
+
+        // All systems go!
+        this.build();
+    };
+
+    Typed.prototype = {
+
+        constructor: Typed
+
+        ,
+        init: function() {
+            // begin the loop w/ first current string (global self.strings)
+            // current string will be passed as an argument each time after this
+            var self = this;
+            self.timeout = setTimeout(function() {
+                for (var i=0;i<self.strings.length;++i) self.sequence[i]=i;
+
+                // shuffle the array if true
+                if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+
+                // Start typing
+                self.typewrite(self.strings[self.sequence[self.arrayPos]], self.strPos);
+            }, self.startDelay);
+        }
+
+        ,
+        build: function() {
+            var self = this;
+            // Insert cursor
+            if (this.showCursor === true) {
+                this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
+                this.el.after(this.cursor);
+            }
+            if (this.stringsElement) {
+                self.strings = [];
+                this.stringsElement.hide();
+                var strings = this.stringsElement.find('p');
+                $.each(strings, function(key, value){
+                    self.strings.push($(value).html());
+                });
+            }
+            this.init();
+        }
+
+        // pass current string state to each function, types 1 char per call
+        ,
+        typewrite: function(curString, curStrPos) {
+            // exit when stopped
+            if (this.stop === true) {
+                return;
+            }
+
+            // varying values for setTimeout during typing
+            // can't be global since number changes each time loop is executed
+            var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
+            var self = this;
+
+            // ------------- optional ------------- //
+            // backpaces a certain string faster
+            // ------------------------------------ //
+            // if (self.arrayPos == 1){
+            //  self.backDelay = 50;
+            // }
+            // else{ self.backDelay = 500; }
+
+            // contain typing function in a timeout humanize'd delay
+            self.timeout = setTimeout(function() {
+                // check for an escape character before a pause value
+                // format: \^\d+ .. eg: ^1000 .. should be able to print the ^ too using ^^
+                // single ^ are removed from string
+                var charPause = 0;
+                var substr = curString.substr(curStrPos);
+                if (substr.charAt(0) === '^') {
+                    var skip = 1; // skip atleast 1
+                    if (/^\^\d+/.test(substr)) {
+                        substr = /\d+/.exec(substr)[0];
+                        skip += substr.length;
+                        charPause = parseInt(substr);
+                    }
+
+                    // strip out the escape character and pause value so they're not printed
+                    curString = curString.substring(0, curStrPos) + curString.substring(curStrPos + skip);
+                }
+
+                if (self.contentType === 'html') {
+                    // skip over html tags while typing
+                    var curChar = curString.substr(curStrPos).charAt(0)
+                    if (curChar === '<' || curChar === '&') {
+                        var tag = '';
+                        var endTag = '';
+                        if (curChar === '<') {
+                            endTag = '>'
+                        } else {
+                            endTag = ';'
+                        }
+                        while (curString.substr(curStrPos).charAt(0) !== endTag) {
+                            tag += curString.substr(curStrPos).charAt(0);
+                            curStrPos++;
+                        }
+                        curStrPos++;
+                        tag += endTag;
+                    }
+                }
+
+                // timeout for any pause after a character
+                self.timeout = setTimeout(function() {
+                    if (curStrPos === curString.length) {
+                        // fires callback function
+                        self.options.onStringTyped(self.arrayPos);
+
+                        // is this the final string
+                        if (self.arrayPos === self.strings.length - 1) {
+                            // animation that occurs on the last typed string
+                            self.options.callback();
+
+                            self.curLoop++;
+
+                            // quit if we wont loop back
+                            if (self.loop === false || self.curLoop === self.loopCount)
+                                return;
+                        }
+
+                        self.timeout = setTimeout(function() {
+                            self.backspace(curString, curStrPos);
+                        }, self.backDelay);
+                    } else {
+
+                        /* call before functions if applicable */
+                        if (curStrPos === 0)
+                            self.options.preStringTyped(self.arrayPos);
+
+                        // start typing each new char into existing string
+                        // curString: arg, self.el.html: original text inside element
+                        var nextString = curString.substr(0, curStrPos + 1);
+                        if (self.attr) {
+                            self.el.attr(self.attr, nextString);
+                        } else {
+                            if (self.isInput) {
+                                self.el.val(nextString);
+                            } else if (self.contentType === 'html') {
+                                self.el.html(nextString);
+                            } else {
+                                self.el.text(nextString);
+                            }
+                        }
+
+                        // add characters one by one
+                        curStrPos++;
+                        // loop the function
+                        self.typewrite(curString, curStrPos);
+                    }
+                    // end of character pause
+                }, charPause);
+
+                // humanized value for typing
+            }, humanize);
+
+        }
+
+        ,
+        backspace: function(curString, curStrPos) {
+            // exit when stopped
+            if (this.stop === true) {
+                return;
+            }
+
+            // varying values for setTimeout during typing
+            // can't be global since number changes each time loop is executed
+            var humanize = Math.round(Math.random() * (100 - 30)) + this.backSpeed;
+            var self = this;
+
+            self.timeout = setTimeout(function() {
+
+                // ----- this part is optional ----- //
+                // check string array position
+                // on the first string, only delete one word
+                // the stopNum actually represents the amount of chars to
+                // keep in the current string. In my case it's 14.
+                // if (self.arrayPos == 1){
+                //  self.stopNum = 14;
+                // }
+                //every other time, delete the whole typed string
+                // else{
+                //  self.stopNum = 0;
+                // }
+
+                if (self.contentType === 'html') {
+                    // skip over html tags while backspacing
+                    if (curString.substr(curStrPos).charAt(0) === '>') {
+                        var tag = '';
+                        while (curString.substr(curStrPos).charAt(0) !== '<') {
+                            tag -= curString.substr(curStrPos).charAt(0);
+                            curStrPos--;
+                        }
+                        curStrPos--;
+                        tag += '<';
+                    }
+                }
+
+                // ----- continue important stuff ----- //
+                // replace text with base text + typed characters
+                var nextString = curString.substr(0, curStrPos);
+                if (self.attr) {
+                    self.el.attr(self.attr, nextString);
+                } else {
+                    if (self.isInput) {
+                        self.el.val(nextString);
+                    } else if (self.contentType === 'html') {
+                        self.el.html(nextString);
+                    } else {
+                        self.el.text(nextString);
+                    }
+                }
+
+                // if the number (id of character in current string) is
+                // less than the stop number, keep going
+                if (curStrPos > self.stopNum) {
+                    // subtract characters one by one
+                    curStrPos--;
+                    // loop the function
+                    self.backspace(curString, curStrPos);
+                }
+                // if the stop number has been reached, increase
+                // array position to next string
+                else if (curStrPos <= self.stopNum) {
+                    self.arrayPos++;
+
+                    if (self.arrayPos === self.strings.length) {
+                        self.arrayPos = 0;
+
+                        // Shuffle sequence again
+                        if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+
+                        self.init();
+                    } else
+                        self.typewrite(self.strings[self.sequence[self.arrayPos]], curStrPos);
+                }
+
+                // humanized value for typing
+            }, humanize);
+
+        }
+        /**
+         * Shuffles the numbers in the given array.
+         * @param {Array} array
+         * @returns {Array}
+         */
+        ,shuffleArray: function(array) {
+            var tmp, current, top = array.length;
+            if(top) while(--top) {
+                current = Math.floor(Math.random() * (top + 1));
+                tmp = array[current];
+                array[current] = array[top];
+                array[top] = tmp;
+            }
+            return array;
+        }
+
+        // Start & Stop currently not working
+
+        // , stop: function() {
+        //     var self = this;
+
+        //     self.stop = true;
+        //     clearInterval(self.timeout);
+        // }
+
+        // , start: function() {
+        //     var self = this;
+        //     if(self.stop === false)
+        //        return;
+
+        //     this.stop = false;
+        //     this.init();
+        // }
+
+        // Reset and rebuild the element
+        ,
+        reset: function() {
+            var self = this;
+            clearInterval(self.timeout);
+            var id = this.el.attr('id');
+            this.el.after('<span id="' + id + '"/>')
+            this.el.remove();
+            if (typeof this.cursor !== 'undefined') {
+                this.cursor.remove();
+            }
+            // Send the callback
+            self.options.resetCallback();
+        }
+
+    };
+
+    $.fn.typed = function(option) {
+        return this.each(function() {
+            var $this = $(this),
+                data = $this.data('typed'),
+                options = typeof option == 'object' && option;
+            if (!data) $this.data('typed', (data = new Typed(this, options)));
+            if (typeof option == 'string') data[option]();
+        });
+    };
+
+    $.fn.typed.defaults = {
+        strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"],
+        stringsElement: null,
+        // typing speed
+        typeSpeed: 0,
+        // time before typing starts
+        startDelay: 0,
+        // backspacing speed
+        backSpeed: 0,
+        // shuffle the strings
+        shuffle: false,
+        // time before backspacing
+        backDelay: 500,
+        // loop
+        loop: false,
+        // false = infinite
+        loopCount: false,
+        // show cursor
+        showCursor: true,
+        // character for cursor
+        cursorChar: "|",
+        // attribute to type (null == text)
+        attr: null,
+        // either html or text
+        contentType: 'html',
+        // call when done callback function
+        callback: function() {},
+        // starting callback function before each string
+        preStringTyped: function() {},
+        //callback for every typed string
+        onStringTyped: function() {},
+        // callback for reset
+        resetCallback: function() {}
+    };
+
+
+}(window.jQuery);
+
+$("document").ready(function() {
+  handleShowHideSidebar();
+  handleEscKey();
+  handleSideBarClick();
+  handleTyping();
+});
+
+function handleShowHideSidebar() {
+  var $menuButton = $("#menu-button i"),
+      show = "animated slideInLeft",
+      hide = "animated slideOutLeft";
+
+  $menuButton.on("click", function() {
+    var $sideBar = $("#sidebar");
+
+    if ($sideBar.hasClass("slideInLeft")) {
+      $sideBar
+        .removeClass(show)
+        .addClass(hide)
+        .removeClass("hidden");
+    } else {
+      $sideBar
+        .removeClass(hide)
+        .addClass(show)
+        .removeClass("hidden");
+    }
+  });
+}
+
+function handleSideBarClick() {
+  $("#sidebar li a").on("click", function() {
+    var href = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(href).offset().top
+    }, 600);
+    $("#sidebar")
+      .removeClass("animated slideInLeft")
+      .addClass("animated slideOutLeft");
+    return false;
+  });
+}
+
+function handleEscKey() {
+  $(document).on("keyup", function(e) {
+    if (e.keyCode === 27) {
+      var href = $(this).attr("href");
+      $("html, body").animate({
+        scrollTop: $(href).offset().top
+      }, 600);
+      $("#sidebar")
+        .removeClass("animated slideInLeft")
+        .addClass("animated slideOutLeft");
+      return false;
+    }
+  });
+}
+
+function handleTyping () {
+  $(".element").typed({
+    strings: ["a Software Engineer", "a family guy", "a bacon addicted"],
+    typeSpeed: 50,
+    starDelay: 200,
+    backDelay: 600,
+    loop: true,
+    showCursor: true,
+    cursorChar: "|"
+  });
+}
+
+    </script>
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
+  <body>
     
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Cover</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="px-3">
-    <h1>Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-    </p>
-  </main>
-
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
+    
+    <div class="container-fluid fill light-white-font">
+  <div id="menu-button">
+    <i class="fa fa-bars fa-3x middle-blue-font"></i>
+  </div>
+  <nav id="sidebar" class="hidden">
+    <ul class="nav nav-pills nav-stacked list-group">
+      <li class="text-uppercase"><a href="#home">Home</a></li>
+      <li class="text-uppercase"><a href="#projects">Projects</a></li>
+      <li class="text-uppercase"><a href="#about">About</a></li>
+      <li class="text-uppercase"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="home" class="container-fluid fill dark-gray-background">
+    <h1 class="center text-center">
+      <p>Hi, my name is <strong class="middle-blue-font">Lorem Ipsum</strong></p>
+      <p>and I'm <span class="element"></span></p>
+      <p>living in <strong class="middle-blue-font">Lorem</strong>.</p>
+    </h1>
+  </div>
 </div>
 
+<div id="projects" class="container-fluid light-white-font">
+  <h2 class="text-uppercase dark-gray-font">Projects</h2>
+  <div class="container dark-gray-font">
+    <div class="row">
 
+      <div class="col-md-4">
+        <div class="panel panel-default fixed-width center-block">
+          <div class="panel-body">
+            <a href="" target="coderbits">
+              <img class="img-responsive center-block" src="https://source.unsplash.com/640x480/?programming" />
+            </a>
+          </div>
+          <div class="panel-footer">
+            <h3>Project 1</h3>
+            <p>Project Description</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="panel panel-default fixed-width center-block">
+          <div class="panel-body">
+            <a href="https://www.npmjs.com/package/file-appender" target="file-appender">
+              <img class="img-responsive center-block" src="https://source.unsplash.com/640x480/?it%20project" />
+            </a>
+          </div>
+          <div class="panel-footer">
+            <h3>Project 2</h3>
+            <p>Project Description</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="about" class="container-fluid">
+  <h2 class="text-uppercase dark-gray-font">About me</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1 col-sm-12">
+        <p class="dark-gray-font text-justify">
+          I'm a happy family guy, bacon addicted, who loves science and technology in general. Mostly, I try to learn everything I can. In my opinion, getting your hands dirty is the best way to learn a new skill.
+        </p>
+        <p class="dark-gray-font text-justify">
+          Most of my coding experience were built upon the Java/Oracle DB stack, but I have played in the past with some other things like Smalltalk, C, Delphi, Matlab. A couple years ago I started to play with Node.js to take the rust off my Javascript skills, and I'm still loving it.
+        </p>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <p class="dark-gray-font text-justify">
+          I'm open minded to new technologies, but fullstack web development and distributed systems are the two things that have grabbed my attention recently. </p>
+        <p class="dark-gray-font text-justify">
+          I'm a hard worker, committed and self learner. Definitely, I'm not a <strong><a href="#" target="_blank">guru jedi rockstar ninja</a></strong>, but I always get my stuff done.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="footer">
+  <div class="container">
+    <div class="row">
+      <button type="button" name="email-btn" class="btn btn-default middle-blue-background center-block email">
+        <a href="mailto:rodrigo.mangue@gmail.com" class="text-center text-uppercase"><i class="fa fa-envelope"></i> Email me</a>
+      </button>
+      <br />
+      <p class="text-center light-white-font">
+        <a class="middle-blue-font" href="" title="I'm still getting the hang of it" target="twitter"><strong><i class="fa fa-twitter"></i></strong></a>
+        &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+        <a class="middle-blue-font" href="" title="My previous experiences" target="linkedin"><strong><i class="fa fa-linkedin"></i></strong></a>
+        &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+        <a class="middle-blue-font" href="https://github.com/Shrikant-28" title="My code: see for yourself" target="_blank"><strong><i class="fa fa-github"></i></strong></a>
+        &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+        <a class="middle-blue-font" href="" title="Me trying to help" target="so"><strong><i class="fa fa-stack-overflow"></i></strong></a>
+        &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+        <a class="middle-blue-font" href="/" title="My pens" target="codepen"><strong><i class="fa fa-codepen"></i></strong></a>
+      </p>
+    </div>
+  </div>
+
+</div>
     
   </body>
 </html>
